@@ -1,0 +1,65 @@
+// ==========================================================================
+// Global Config
+// ==========================================================================
+
+// Font Stacks
+
+$font-url--google-primary        : 'http://fonts.googleapis.com/css?family=Lato:300,400,700';
+$font-family--primary   		 : 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-url--google-secondary		 : 'http://fonts.googleapis.com/css?family=Trocchi';	
+$font-family--secondary 		 :  Baskerville, Times, serif;
+
+// Font Weights
+
+$font-weight--light      : 300;
+$font-weight--medium     : 400;
+$font-weight--bold       : 700;
+
+// Descriptive Base Colors
+
+$white    : #fff;
+$black    : #0b0b0b;
+$grey     : #909090;
+
+$purple  : #660066;
+$orange  : #F60;
+
+// Color Usage
+
+$color-primary   : $purple;
+$color-secondary : $orange;
+
+// Color Palette Modifiers
+
+$palettes: (
+  	purple: (
+    	light    : lighten($purple, 30%),
+    	base     : $purple
+  	),
+	orange: (
+		light    : lighten($orange, 20%),
+		base     : $orange
+	),
+	grey: (
+		light 	 : lighten($grey, 35%),
+		base 	 : $grey
+	)
+);
+
+// UI Colors
+
+
+// Text
+
+$base__font-size : em(14px);
+$base__line      : em(42px);
+
+$letter-space-wide	: 1.5px;
+
+$nav__font-size		: em(16px);
+
+$about__font-size	: em(16px);
+
+// Path to Assets
+
+$path--rel       : "../img";

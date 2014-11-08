@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Gertz Design // Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="scss/application.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" /> 
+
+    <style type="javascript"> 
+      <!-- Enable media queries for old IE -->
+      <!--[if lt IE 9]>
+      <script src="js/css3-mediaqueries.js"></script>
+      <![endif]-->
+    </style>
+
+  </head>
+  <body class="no-touch">
+    <div id="wrapper">
+      <header>
+      <ul class="name">
+          <li> DANA GERTZ  &nbsp; &bull;  &nbsp; DESIGNER </li>
+        </ul>
+        <div class="rule1"> &nbsp; </div>
+        <ul class="nav">
+          <li> <a href="index.html"> <span> HOME </span> </a> </li>
+          <li> <a href="html/About.html"> ABOUT </a> </li>
+          <li> <a href="html/LOTR.html"> WORK </a> </li>
+        </ul>
+        <div class="rule2"> &nbsp; </div>
+      </header>
+      <div class="work">
+        <div class="box">
+          <a href="html/LOTR.html"> 
+            <div class="innerContent">
+              <img src="img/HOME_lotr2.jpg" />
+              <div class="title-box">Lord Of The Rings:<br>A Deconstruction</div>
+            </div>
+          </a>  
+        </div>
+        <div class="box"> 
+          <a href="html/GarlicPress.html">
+            <div class="innerContent">
+              <img src="img/HOME_garlic2.jpg" />
+              <div class="title-box"> The Garlic Press </div>
+            </div>
+          </a>  
+        </div>
+        <div class="box"> 
+          <a href="html/SeniorShow.html">
+            <div class="innerContent">
+              <img src="img/HOME_senior2.jpg" />
+              <div class="title-box"> Senior Show 2012 </div>
+            </div>
+          </a>  
+        </div>
+        <div class="box">
+          <a href="html/ArtistsWriters.html"> 
+            <div class="innerContent">
+              <img src="img/HOME_AW2.jpg" />
+              <div class="title-box"> Artists & Writers Softball Game 2013 </div>
+            </div>
+          </a>  
+        </div>
+        <div class="box"> 
+          <a href="html/BuckinghamPond.html">
+            <div class="innerContent">
+              <img src="img/HOME_pond2.jpg" />
+              <div class="title-box"> Buckingham Pond Conservancy </div>
+            </div>
+          </a>  
+        </div>
+        <div class="box"> 
+          <a href="html/JamesCotton.html">
+            <div class="innerContent">
+              <img src="img/HOME_cotton2.jpg" />
+              <div class="title-box"> James Cotton: 100% Cotton </div>
+            </div>
+          </a>  
+        </div>
+        <div class="box"> 
+          <a href="html/Viva.html">
+            <div class="innerContent">
+              <img src="img/HOME_viva2.jpg" />
+              <div class="title-box"> Viva Paper Towel Ads </div>
+            </div>
+          </a>  
+        </div>
+        <div class="box"> 
+          <a href="html/Wandshop.html">
+            <div class="innerContent">
+              <img src="img/HOME_wand2.jpg" />
+              <div class="title-box"> This Is A Wandshop </div>
+            </div>
+          </a>  
+        </div>
+        <div class="box"> 
+          <a href="html/ArtisanalLiving.html">
+            <div class="innerContent">
+              <img src="img/HOME_artisanal2.jpg" />
+              <div class="title-box"> Artisanal Living Magazine </div>
+            </div>
+          </a>  
+        </div>
+      </div>
+    </div>
+    <div class="rule2"> &nbsp; </div>
+    <footer>
+        &nbsp;
+    </footer>
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
+  <script type="text/javascript">
+    $(function(){
+       // See if this is a touch device
+       if ('ontouchstart' in window)
+       {
+          // Set the correct [touchscreen] body class
+          $('body').removeClass('no-touch').addClass('touch');
+         
+          // Add the touch toggle to show text when tapped
+          $('div.boxInner img').click(function(){
+             $(this).closest('.boxInner').toggleClass('touchFocus');
+          });
+       }
+    });
+  </script>    
+
+  </body>
+</html>

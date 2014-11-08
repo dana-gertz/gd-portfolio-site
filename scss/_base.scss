@@ -1,0 +1,80 @@
+
+* {
+  li {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+    span,
+    &:hover {
+      color: $orange;
+    }
+  }
+}
+
+#wrapper {
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+body {
+  background-attachment: scroll;
+  background-image: url("../img/DG_bkgd.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+body,
+header,
+.nav,
+.work {
+  margin: 0 auto;
+  max-width: 1000px;
+  text-align: center;
+}
+
+body.no-touch .innerContent:hover .title-box, body.touch .innerContent.touchFocus .title-box {
+   margin-bottom: 0;
+}
+
+.innerContent,
+.name {
+  font-family: $font-family--primary;
+  text-transform: uppercase;
+  font-weight: $font-weight--light;
+  letter-spacing: $letter-space-wide;
+  line-height: 20px;
+}
+
+.nav {
+  font-weight: $font-weight--medium;
+  margin-top: 1.5%;
+  letter-spacing: $letter-space-wide;
+}
+
+.rule1,
+.rule2 {
+  @include rule;
+}
+
+.rule1 {
+  background: $purple;
+}
+
+.rule2 {
+  background: $grey;
+  height: 1px;
+  margin-bottom: 20px;
+}
+
+.name {
+  color: $purple;
+}
+
+footer {
+  height: 200px;  
+  width: 100%;
+  background: palette(grey, light);
+  margin: 5% auto 0 auto;
+}
