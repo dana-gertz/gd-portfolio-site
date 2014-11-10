@@ -2,12 +2,6 @@
 // Utilities
 // ==========================================================================
 
-// Import if Google Fonts URL is defined
-
-@if variable-exists(font-url--google) {
-  @import url($font-url--google);
-}
-
 // Calculate em values
 
 @function em($target, $context: $base__font-size) {
@@ -18,6 +12,10 @@
 
 @function palette($palette, $shade: 'base') {
   @return map-get(map-get($palettes, $palette), $shade);
+}
+
+@function font-hierarchy($font-hierarchy, $size: 'base') {
+  @return map-get(map-get($font-hierarchies, $font-hierarchy), $size);
 }
 
 // Mixins

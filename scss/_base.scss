@@ -25,6 +25,14 @@ body {
   background-repeat: no-repeat;
 }
 
+h1,
+.innerContent,
+.name,
+.nav {
+  letter-spacing: $letter-space-wide;
+}
+
+
 body,
 header,
 .nav,
@@ -32,6 +40,12 @@ header,
   margin: 0 auto;
   max-width: 1000px;
   text-align: center;
+  h1 {
+    font-family: $font-family--secondary; 
+    font-size: font-hierarchy(type-size, head);
+    font-weight: $font-weight--medium; 
+    color: palette(orange, light);      
+  }
 }
 
 body.no-touch .innerContent:hover .title-box, body.touch .innerContent.touchFocus .title-box {
@@ -43,14 +57,12 @@ body.no-touch .innerContent:hover .title-box, body.touch .innerContent.touchFocu
   font-family: $font-family--primary;
   text-transform: uppercase;
   font-weight: $font-weight--light;
-  letter-spacing: $letter-space-wide;
   line-height: 20px;
 }
 
 .nav {
   font-weight: $font-weight--medium;
   margin-top: 1.5%;
-  letter-spacing: $letter-space-wide;
 }
 
 .rule1,

@@ -1,3 +1,5 @@
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400,700");
+@import url("http://fonts.googleapis.com/css?family=Bitter:400,700,400italic");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -292,6 +294,12 @@ body {
   background-position: top center;
   background-repeat: no-repeat; }
 
+h1,
+.innerContent,
+.name,
+.nav {
+  letter-spacing: 1.5px; }
+
 body,
 header,
 .nav,
@@ -299,6 +307,14 @@ header,
   margin: 0 auto;
   max-width: 1000px;
   text-align: center; }
+  body h1,
+  header h1,
+  .nav h1,
+  .work h1 {
+    font-family: "Bitter", Baskerville, Times, serif;
+    font-size: 48px;
+    font-weight: 400;
+    color: #ffa366; }
 
 body.no-touch .innerContent:hover .title-box, body.touch .innerContent.touchFocus .title-box {
   margin-bottom: 0; }
@@ -308,13 +324,11 @@ body.no-touch .innerContent:hover .title-box, body.touch .innerContent.touchFocu
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 300;
-  letter-spacing: 1.5px;
   line-height: 20px; }
 
 .nav {
   font-weight: 400;
-  margin-top: 1.5%;
-  letter-spacing: 1.5px; }
+  margin-top: 1.5%; }
 
 .rule1,
 .rule2 {
