@@ -102,6 +102,16 @@ body.no-touch .innerContent:hover .title-box, body.touch .innerContent.touchFocu
   color: $purple;
 }
 
+.main-work-img {
+  width: 100%;
+  margin: 5% 3% 0 3%;
+  float: center;
+  overflow: hidden;
+  img {
+    width: 100%;
+  }  
+}
+
 footer {
   height: 200px;  
   width: 100%;
