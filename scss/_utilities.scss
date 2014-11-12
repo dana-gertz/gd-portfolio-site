@@ -80,6 +80,9 @@
       width: 50%;
       padding-bottom: 50%;
    }
+   .portrait {
+      display: none;
+    }
 }
 @media only screen and (min-width : 651px) {
    /* Small desktop / ipad view: 3 tiles */
