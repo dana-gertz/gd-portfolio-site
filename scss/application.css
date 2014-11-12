@@ -218,8 +218,14 @@ th {
     height: 100%;
     float: left;
     margin: 0 8% 3% 8%; }
-  .intro p, .intro h1 {
+  .intro h1 {
     margin: 0 8%; }
+  .intro p {
+    margin: 1em 8% 0 8%; }
+    .intro p a {
+      color: #909090; }
+      .intro p a:hover {
+        color: #F60; }
 
 @media only screen and (max-width: 480px) {
   /* smartphone view: 1 tile */
@@ -317,7 +323,7 @@ p {
   text-align: left;
   font-family: "Bitter", Baskerville, Times, serif;
   font-size: 1em;
-  line-height: 2em; }
+  line-height: 1.9em; }
 
 body,
 header,
