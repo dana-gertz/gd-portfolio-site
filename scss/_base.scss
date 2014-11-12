@@ -33,6 +33,21 @@ h1,
 }
 
 
+h1 {
+  font-family: $font-family--secondary; 
+  font-size: font-hierarchy(type-size, head);
+  font-weight: $font-weight--medium; 
+  color: palette(orange, light);    
+  text-align: left; 
+}
+
+p {
+  text-align: left;
+  font-family: $font-family--secondary;
+  font-size: font-hierarchy(type-size, base);
+  line-height: font-hierarchy(line-height, base);
+}
+
 body,
 header,
 .nav,
@@ -40,13 +55,6 @@ header,
   margin: 0 auto;
   max-width: 1000px;
   text-align: center;
-  h1 {
-    font-family: $font-family--secondary; 
-    font-size: font-hierarchy(type-size, head);
-    font-weight: $font-weight--medium; 
-    color: palette(orange, light);    
-    text-align: left; 
-  }
 }
 
 body.no-touch .innerContent:hover .title-box, body.touch .innerContent.touchFocus .title-box {

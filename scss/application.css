@@ -213,11 +213,11 @@ th {
 
 .intro {
   margin: 0 auto;
-  max-width: 700px; }
+  max-width: 850px; }
   .intro .portrait {
     height: 100%;
     float: left;
-    margin-right: 8%; }
+    margin: 0 8% 3% 0; }
 
 @media only screen and (max-width: 480px) {
   /* smartphone view: 1 tile */
@@ -243,7 +243,10 @@ th {
 
   .box {
     width: 100%;
-    padding-bottom: 100%; } }
+    padding-bottom: 100%; }
+
+  .portrait {
+    display: none; } }
 @media only screen and (max-width: 650px) and (min-width: 481px) {
   /* Tablet view: 2 tiles */
   body {
@@ -298,6 +301,19 @@ h1,
 .nav {
   letter-spacing: 1.5px; }
 
+h1 {
+  font-family: "Bitter", Baskerville, Times, serif;
+  font-size: 3em;
+  font-weight: 400;
+  color: #ffa366;
+  text-align: left; }
+
+p {
+  text-align: left;
+  font-family: "Bitter", Baskerville, Times, serif;
+  font-size: 1em;
+  line-height: 2em; }
+
 body,
 header,
 .nav,
@@ -305,15 +321,6 @@ header,
   margin: 0 auto;
   max-width: 1000px;
   text-align: center; }
-  body h1,
-  header h1,
-  .nav h1,
-  .work h1 {
-    font-family: "Bitter", Baskerville, Times, serif;
-    font-size: 48px;
-    font-weight: 400;
-    color: #ffa366;
-    text-align: left; }
 
 body.no-touch .innerContent:hover .title-box, body.touch .innerContent.touchFocus .title-box {
   margin-bottom: 0; }

@@ -48,13 +48,17 @@ $palettes: (
 
 // Text
 
-$base__font-size : 16px;
-$base__line      : 42px;
+$base__font-size : 1em;
+$base__line      : 2em;
 
 $font-hierarchies: (
 	type-size: (
 		head	: $base__font-size * 3,
 		base 	: $base__font-size
+	),
+	line-height: (
+		head	: $base__line * 3,
+		base 	: $base__line
 	)
 );
 
