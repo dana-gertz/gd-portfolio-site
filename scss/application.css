@@ -180,16 +180,6 @@ td,
 th {
   padding: 0; }
 
-.nav {
-  max-width: 780px;
-  height: 100%;
-  display: -webkit-flex;
-  -webkit-flex-direction: row;
-  -webkit-justify-content: center;
-  -webkit-flex-wrap: wrap; }
-  .nav li {
-    margin: 0 2em; }
-
 .box {
   width: 20%;
   padding-bottom: 20%;
@@ -220,6 +210,14 @@ th {
     -moz-transition: all 0.15s ease-out;
     -o-transition: all 0.15s ease-out;
     transition: all 0.15s ease-out; }
+
+.intro {
+  margin: 0 auto;
+  max-width: 700px; }
+  .intro .portrait {
+    height: 100%;
+    float: left;
+    margin-right: 8%; }
 
 @media only screen and (max-width: 480px) {
   /* smartphone view: 1 tile */
@@ -314,7 +312,8 @@ header,
     font-family: "Bitter", Baskerville, Times, serif;
     font-size: 48px;
     font-weight: 400;
-    color: #ffa366; }
+    color: #ffa366;
+    text-align: left; }
 
 body.no-touch .innerContent:hover .title-box, body.touch .innerContent.touchFocus .title-box {
   margin-bottom: 0; }
@@ -327,8 +326,16 @@ body.no-touch .innerContent:hover .title-box, body.touch .innerContent.touchFocu
   line-height: 20px; }
 
 .nav {
+  max-width: 780px;
+  height: 100%;
   font-weight: 400;
-  margin-top: 1.5%; }
+  margin-top: 1.5%;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -webkit-justify-content: center;
+  -webkit-flex-wrap: wrap; }
+  .nav li {
+    margin: 0 2em; }
 
 .rule1,
 .rule2 {

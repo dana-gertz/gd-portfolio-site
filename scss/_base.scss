@@ -44,7 +44,8 @@ header,
     font-family: $font-family--secondary; 
     font-size: font-hierarchy(type-size, head);
     font-weight: $font-weight--medium; 
-    color: palette(orange, light);      
+    color: palette(orange, light);    
+    text-align: left; 
   }
 }
 
@@ -61,8 +62,17 @@ body.no-touch .innerContent:hover .title-box, body.touch .innerContent.touchFocu
 }
 
 .nav {
+  max-width: 780px;
+  height: 100%;
   font-weight: $font-weight--medium;
   margin-top: 1.5%;
+  display: -webkit-flex;
+    -webkit-flex-direction: row;
+    -webkit-justify-content: center;
+    -webkit-flex-wrap: wrap;
+  li {
+    margin: 0 2em;
+  }
 }
 
 .rule1,

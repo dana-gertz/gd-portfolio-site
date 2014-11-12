@@ -1,15 +1,4 @@
-
-.nav {
-  max-width: 780px;
-  height: 100%;
-  display: -webkit-flex;
-    -webkit-flex-direction: row;
-    -webkit-justify-content: center;
-    -webkit-flex-wrap: wrap;
-  li {
-    margin: 0 2em;
-  }
-}
+//Home grid
 
 .box {
   width: 20%;
@@ -44,5 +33,17 @@
     -moz-transition: all 0.15s ease-out;
     -o-transition: all 0.15s ease-out;
     transition: all 0.15s ease-out;
+  }
+}
+
+//About
+
+.intro{
+  margin: 0 auto;
+  max-width: 700px;
+  .portrait {
+    height: 100%;
+    float: left;
+    margin-right: 8%;
   }
 }
