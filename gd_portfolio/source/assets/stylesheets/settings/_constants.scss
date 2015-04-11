@@ -14,14 +14,14 @@ $colors: (
     dark     : darken($grey, 20%)
   ),
   purple: (
-    light    : lighten($purple, 30%),
+    light    : lighten($purple, 10%),
     base     : $purple,
-    dark     : darken($purple, 20%)
+    dark     : darken($purple, 5%)
   ),
   orange: (
     light    : lighten($orange, 20%),
     base     : $orange,
-    dark     : darken($orange, 20%)
+    dark     : darken($orange, 10%)
   )
 );
 
@@ -32,3 +32,17 @@ $breakpoints: (
   'vp-768'    : (min-width: 768px),
   'vp-1024'   : (min-width: 1024px)
 );
+
+// Font Stacks
+//TO BE REVISED
+
+$font-url--google-primary        : 'http://fonts.googleapis.com/css?family=Lato:300,400,700';
+$font-family--primary        : 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-url--google-secondary    : 'http://fonts.googleapis.com/css?family=Bitter:400,700,400italic';
+$font-family--secondary      : 'Bitter', Baskerville, Times, serif;
+
+// Font Weights
+
+$font-weight--light      : 300;
+$font-weight--medium     : 400;
+$font-weight--bold       : 700;
