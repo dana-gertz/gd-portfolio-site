@@ -1,0 +1,37 @@
+
+// Base Colors
+
+$white    : #fff;
+$black    : #0b0b0b;
+$grey     : #909090;
+
+$purple  : #660066;
+$orange  : #F60;
+
+// Color Palette Modifiers
+
+$colors: (
+  grey: (
+    light    : lighten($grey, 35%),
+    base     : $grey,
+    dark     : darken($grey, 20%)
+  ),
+  purple: (
+    light    : lighten($purple, 30%),
+    base     : $purple,
+    dark     : darken($purple, 20%)
+  ),
+  orange: (
+    light    : lighten($orange, 20%),
+    base     : $orange,
+    dark     : darken($orange, 20%)
+  )
+);
+
+//Breakpoints
+
+$breakpoints: (
+  'vp-480'    : (min-width: 480px),
+  'vp-768'    : (min-width: 768px),
+  'vp-1024'   : (min-width: 1024px)
+);

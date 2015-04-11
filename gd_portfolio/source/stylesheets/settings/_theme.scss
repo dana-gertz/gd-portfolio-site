@@ -1,0 +1,12 @@
+
+$light-grey             : color-from($colors, grey, light);
+$grey                   : color-from($colors, grey);
+$dark-grey              : color-from($colors, grey, dark);
+
+$light-purple           : color-from($colors, purple, light);
+$purple                 : color-from($colors, purple);
+$dark-purple            : color-from($colors, purple, dark);
+
+$light-orange           : color-from($colors, orange, light);
+$orange                 : color-from($colors, orange);
+$dark-orange            : color-from($colors, orange, dark);
