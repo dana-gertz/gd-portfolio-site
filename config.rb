@@ -21,9 +21,7 @@
 #
 # A path which all have the same layout
 # with_layout :admin do
-
-#page "/content-page*", :layout => "content-page"
-
+#   page "/admin/*"
 # end
 
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
@@ -33,12 +31,6 @@
 ###
 # Helpers
 ###
-
-# helpers do
-#   def nav_active(page)
-#     @page_id == page ? {:class => "Active"} : {}
-#   end
-# end
 
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
@@ -55,32 +47,11 @@
 #   end
 # end
 
-# Add page name as body class
+set :css_dir, 'stylesheets'
 
-#def page_classes
-#  path = request.path_info.dup
-#  path < < settings.index_file if path.match(%r{/$})
-#  path = path.gsub(%r{^/}, '')
+set :js_dir, 'javascripts'
 
-#  classes = []
-#  parts = path.split('.')[0].split('/')
-#  parts.each_with_index {|path, i| classes << parts.first(i+1).join('_')}
-
-#  classes.join(' ')
-#end
-
-activate :directory_indexes
-
-set :css_dir, 'assets/stylesheets'
-set :js_dir, 'assets/javascripts'
-set :images_dir, 'assets/images'
-
-set :haml, :format => :html5
-set :relative_links, 'true'
-
-configure :development do
-  activate :livereload
-end
+set :images_dir, 'images'
 
 # Build-specific configuration
 configure :build do
@@ -94,13 +65,8 @@ configure :build do
   # activate :asset_hash
 
   # Use relative URLs
-  activate :relative_assets
+  # activate :relative_assets
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
-
-  # Pretty URLs
-
-  # activate :directory_indexes
-
 end
