@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+
+  <%= partial "partials/head" %>
+
+  <body class="<%= current_page.data.page_class %>">
+    <div class="wrap">
+
+      <%= partial "partials/header" %>
+
+      <div class="content-wrap">
+
+        <%= yield %>
+
+      </div>
+
+      <%= partial "partials/footer" %>
+
+    </div>
+  </body>
+</html>
