@@ -1,0 +1,13 @@
+
+// Simple Color Retrieval
+// from HAMMERFIST
+// ...............................................
+@function color-from($palette_name, $palette, $tone: 'base') {
+  @if type-of($palette_name) == "string" {
+    @warn "$palette_name is a String, but should be a passed-in variable for a palette map.";
+    @return false;
+  }
+
+  @return map-get(map-get($palette_name, $palette), $tone);
+}
+
