@@ -1,14 +1,29 @@
 
-.test {
-  content: "";
-  background-color: color-from($colors, grey, dark);
-  height: 20rem;
-  width: 100%;
+* {
+  box-sizing: border-box;
 }
 
-h1 {
+body {
+  @extend %body-bitter;
+}
+h1,
+h2 {
   @extend %headline-lato;
+  margin: 0;
+  text-transform: uppercase;
 }
 p {
   @extend %body-bitter;
+  margin: 0;
+}
+section {
+  width: 100%;
+}
+ul {
+  list-style: none;
+}
+
+.home-intro {
+  height: 100vh;
+  background: $purple;
 }
