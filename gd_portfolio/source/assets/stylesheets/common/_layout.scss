@@ -5,3 +5,10 @@
   height: 20rem;
   width: 100%;
 }
+
+h1 {
+  @extend %headline-lato;
+}
+p {
+  @extend %body-bitter;
+}
