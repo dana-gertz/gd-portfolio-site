@@ -15,6 +15,9 @@ p {
   @extend %body-bitter;
   margin: 0;
 }
+a {
+  text-decoration: none;
+}
 section {
   width: 100%;
   border-bottom: 1px solid color-from($colors, grey, light);
@@ -27,5 +30,17 @@ ul {
 
 .home-intro {
   height: 93vh;
-  background: $purple;
+  background: color-from($colors, purple, dark);
+  .intro-outer {
+    display: table;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    height: 100%;
+    .intro-inner {
+      display: table-cell;
+      vertical-align: middle;
+      color: $white;
+    }
+  }
 }

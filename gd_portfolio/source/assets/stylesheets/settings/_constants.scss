@@ -1,6 +1,9 @@
 
 // Base Colors
 
+$white   : #FFF;
+$black   : #000;
+
 $grey    : #909090;
 $purple  : #660066;
 $orange  : #F60;
@@ -53,6 +56,7 @@ $font-weight--bold       : 700;
   font-family: $font-family--primary;
   font-weight: $font-weight--light;
   text-transform: uppercase;
+  letter-spacing: .1rem;
 }
 
 %body-bitter {
