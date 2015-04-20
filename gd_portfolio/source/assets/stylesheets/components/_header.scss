@@ -1,12 +1,17 @@
 
 .header-nav {
   ul {
-    text-align: right;
+    text-align: center;
+    @include responsive-style-at(vp-768) {
+      text-align: right;
+    }
     li {
       @extend %headline-lato;
-      display: inline-block;
       margin: 0 .5rem;
       font-size: .75rem;
+      @include responsive-style-at(vp-480) {
+        display: inline-block;
+      }
       a {
         color: $grey;
         &:hover {

@@ -28,9 +28,9 @@ $colors: (
 //Breakpoints
 
 $breakpoints: (
-  'vp-480'    : (min-width: 480px),
-  'vp-768'    : (min-width: 768px),
-  'vp-1024'   : (min-width: 1024px)
+  vp-480    : (min-width: 480px),
+  vp-768    : (min-width: 768px),
+  vp-1024   : (min-width: 1024px)
 );
 
 // Font Stacks

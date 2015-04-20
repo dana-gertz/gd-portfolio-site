@@ -16,3 +16,26 @@
 @mixin container-padding {
   padding: 1rem;
 }
+
+// Responsive Style Mixin
+// This mixin requires an external settings map for "breakpoints"
+// This mixin takes in a named breakpoint and outputs a proper media-query for
+// that particular breakpoint style, working in a "mobile-first" method to
+// progressively change the element styles
+// from HAMMERFIST
+// ...............................................
+@mixin responsive-style-at($name) {
+  // Conditional check for named breakpoint in $breakpoints map
+  @if map-has-key($breakpoints, $name) {
+    // create media query based on the named breakpoint's value
+    @media #{inspect(map-get($breakpoints, $name))} {
+      @content;
+    }
+  }
+
+  // Error thrown if named breakpoint is not found in $breakpoints map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}
