@@ -10,7 +10,6 @@ h1,
 h2 {
   @extend %headline-lato;
   margin: 0;
-  text-transform: uppercase;
 }
 p {
   @extend %body-bitter;
@@ -18,12 +17,15 @@ p {
 }
 section {
   width: 100%;
+  border-bottom: 1px solid color-from($colors, grey, light);
 }
 ul {
   list-style: none;
+  margin: 0;
+  @include container-padding;
 }
 
 .home-intro {
-  height: 100vh;
+  height: 93vh;
   background: $purple;
 }

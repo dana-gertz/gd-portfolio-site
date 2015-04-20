@@ -52,6 +52,7 @@ $font-weight--bold       : 700;
 %headline-lato {
   font-family: $font-family--primary;
   font-weight: $font-weight--light;
+  text-transform: uppercase;
 }
 
 %body-bitter {

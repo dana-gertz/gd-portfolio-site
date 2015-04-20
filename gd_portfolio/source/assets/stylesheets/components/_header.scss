@@ -1,0 +1,18 @@
+
+.header-nav {
+  ul {
+    text-align: right;
+    li {
+      @extend %headline-lato;
+      display: inline-block;
+      margin: 0 .5rem;
+      font-size: .75rem;
+      a {
+        color: $grey;
+        &:hover {
+          color: color-from($colors, orange, light);
+        }
+      }
+    }
+  }
+}
