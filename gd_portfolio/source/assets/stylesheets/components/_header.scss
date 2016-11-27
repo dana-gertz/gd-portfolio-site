@@ -1,23 +1,65 @@
 
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include responsive-style-at(vp-480) {
+    flex-direction: row;
+  }
+}
+
+.header-branding {
+  padding: 1rem 2rem;
+
+  img {
+    height: 25px;
+  }
+
+  @include responsive-style-at(vp-480) {
+    width: 50%;
+  }
+}
+
 .header-nav {
+  width: 100%;
+  background-color: #eee;
+
   ul {
     text-align: center;
-    @include responsive-style-at(vp-768) {
-      text-align: right;
-    }
+    padding: 1rem;
+
     li {
+      display: inline-block;
+      margin: 0 1.25rem;
+
       @extend %headline-lato;
-      margin: 0 .5rem;
       font-size: .75rem;
-      @include responsive-style-at(vp-480) {
-        display: inline-block;
-      }
-      a {
-        color: $grey;
-        &:hover {
-          color: color-from($colors, orange, light);
+    }
+  }
+
+  @include responsive-style-at(vp-480) {
+    width: 50%;
+    background-color: #FFF;
+
+    ul {
+      li {
+        margin: 0 .5rem;
+
+        a {
+          color: $grey;
+          &:hover {
+            color: color-from($colors, orange, light);
+          }
         }
       }
+    }
+  }
+
+  @include responsive-style-at(vp-768) {
+    ul {
+      text-align: right;
+      padding: 1rem 2rem 1rem 1rem;
     }
   }
 }

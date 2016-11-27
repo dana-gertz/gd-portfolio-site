@@ -20,16 +20,15 @@ a {
 }
 section {
   width: 100%;
-  border-bottom: 1px solid color-from($colors, grey, light);
+  // border-bottom: 1px solid color-from($colors, grey, light);
 }
 ul {
   list-style: none;
   margin: 0;
-  @include container-padding;
 }
 
 .home-intro {
-  height: 93vh;
+  height: 100vh;
   background: color-from($colors, purple, dark);
   .intro-outer {
     display: table;
@@ -43,4 +42,14 @@ ul {
       color: $white;
     }
   }
+}
+
+.work-preview {
+  height: 100vh;
+  background: color-from($colors, grey, dark);
+}
+
+.about-me {
+  height: 100vh;
+  background: color-from($colors, orange);
 }
