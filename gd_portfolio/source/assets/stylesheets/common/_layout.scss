@@ -6,30 +6,38 @@
 body {
   @extend %body-bitter;
 }
+
 h1,
 h2 {
   @extend %headline-lato;
   margin: 0;
 }
+
 p {
   @extend %body-bitter;
   margin: 0;
 }
+
 a {
   text-decoration: none;
 }
+
 section {
   width: 100%;
-  // border-bottom: 1px solid color-from($colors, grey, light);
 }
+
 ul {
   list-style: none;
   margin: 0;
 }
 
+img {
+  // overflow: hidden;
+}
+
 .home-intro {
   height: 100vh;
-  background: color-from($colors, purple, dark);
+  background-color: color-from($colors, purple, dark);
   .intro-outer {
     display: table;
     width: 70%;
@@ -46,7 +54,7 @@ ul {
 
 .work-preview {
   height: 100vh;
-  background: color-from($colors, grey, dark);
+  background-color: color-from($colors, grey, dark);
 
   ul {
     display: flex;
@@ -69,7 +77,6 @@ ul {
 
 .about-me {
   height: 100vh;
-  background: color-from($colors, orange);
 
   .about-container {
     display: flex;
@@ -78,9 +85,18 @@ ul {
 
     .portrait {
       height: 100%;
-      width: 33.33%;
-      background: url("https://www.thetapestryhouse.com/media/transfer/img/me159.jpg") no-repeat;
+      width: 30%;
+      overflow: hidden;
+      img {
+        height: 100%;
+        width: auto;
+      }
 
     }
   }
+}
+
+.footer {
+  height: 20rem;
+  background-color: color-from($colors, purple, dark);
 }
