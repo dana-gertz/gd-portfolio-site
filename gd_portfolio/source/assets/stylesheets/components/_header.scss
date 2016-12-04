@@ -10,10 +10,22 @@ header {
 }
 
 .header-branding {
-  padding: 1rem 2rem;
+  padding: 2rem 2rem;
 
   img {
     height: 25px;
+  }
+
+  @include responsive-style-at(vp-480) {
+    width: 50%;
+  }
+}
+
+.work-nav {
+  padding: 1rem 2rem;
+  text-align: right;
+  img {
+    height: 1.75rem;
   }
 
   @include responsive-style-at(vp-480) {

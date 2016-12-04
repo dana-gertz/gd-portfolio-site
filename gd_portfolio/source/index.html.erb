@@ -3,36 +3,15 @@ title: gertzdesign home
 page_class: index
 ---
 
-<!-- <header>
-  <div class="header-branding">
-      <a href="">
-        <img src="/assets/images/logo1b.png">
-      </a>
-  </div>
-  <nav class="header-nav">
-    <ul>
-      <li class="firstnav-child branding-state">
-        <a href="">Work</a>
-      </li>
-      <li class="collateral-state">
-        <a href="">About</a>
-      </li>
-      <li class="lastnav-child other-state">
-        <a href="">Contact</a>
-      </li>
-    </ul>
-  </nav>
-</header> -->
-
 <section class="home-intro">
-  <div class="intro-outer">
+  <!-- <div class="intro-outer">
     <div class="intro-inner">
       <div class="home-branding">
-        <img />
+        <img src="/assets/images/logo1b.png">
       </div>
       <h2>Dana Gertz &#183; Designer</h2>
     </div>
-  </div>
+  </div> -->
 </section>
 
 <section class="work-preview">
@@ -42,49 +21,65 @@ page_class: index
       <!-- < % data.asset_pages.socialassets.each_with_index do |asset, index| % > -->
         <li>
           <div class="content-unit">
-
+            <% link_to '/work.html' do %>
+              <img src="/assets/images/mille-fleur.jpg">
+            <% end %>
           </div>
         </li>
       <!-- < % end % > -->
         <li>
           <div class="content-unit">
-
+            <% link_to '/work.html' do %>
+              <img src="/assets/images/mille-fleur.jpg">
+            <% end %>
           </div>
         </li>
 
         <li>
           <div class="content-unit">
-
+            <% link_to '/work.html' do %>
+              <img src="/assets/images/mille-fleur.jpg">
+            <% end %>
           </div>
         </li>
 
         <li>
           <div class="content-unit">
-
+            <% link_to '/work.html' do %>
+              <img src="/assets/images/mille-fleur.jpg">
+            <% end %>
           </div>
         </li>
 
         <li>
           <div class="content-unit">
-
+            <% link_to '/work.html' do %>
+              <img src="/assets/images/mille-fleur.jpg">
+            <% end %>
           </div>
         </li>
 
         <li>
           <div class="content-unit">
-
+            <% link_to '/work.html' do %>
+              <img src="/assets/images/mille-fleur.jpg">
+            <% end %>
           </div>
         </li>
 
         <li>
           <div class="content-unit">
-
+            <% link_to '/work.html' do %>
+              <img src="/assets/images/mille-fleur.jpg">
+            <% end %>
           </div>
         </li>
 
         <li>
           <div class="content-unit">
-
+            <% link_to '/work.html' do %>
+              <img src="/assets/images/mille-fleur.jpg">
+            <% end %>
           </div>
         </li>
 
@@ -101,7 +96,4 @@ page_class: index
   </div>
 </section>
 
-<section class="footer">
-  <p></p>
-  <img />
-</section>
+<%= partial "partials/footer" %>

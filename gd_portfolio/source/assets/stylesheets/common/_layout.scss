@@ -13,6 +13,11 @@ h2 {
   margin: 0;
 }
 
+h2 {
+  font-size: 1.75rem;
+  letter-spacing: .15rem;
+}
+
 p {
   @extend %body-bitter;
   margin: 0;
@@ -37,7 +42,9 @@ img {
 
 .home-intro {
   height: 100vh;
-  background-color: color-from($colors, purple, dark);
+  // background-color: color-from($colors, purple, dark);
+  background: url(/assets/images/splash-2.png) no-repeat;
+  background-size: contain;
   .intro-outer {
     display: table;
     width: 70%;
@@ -47,7 +54,7 @@ img {
     .intro-inner {
       display: table-cell;
       vertical-align: middle;
-      color: $white;
+      color: $grey;
     }
   }
 }
@@ -71,6 +78,7 @@ img {
       width: 25%;
       background-color: $purple;
       border: 1px solid #FFF;
+      overflow: hidden;
     }
   }
 }
@@ -94,9 +102,4 @@ img {
 
     }
   }
-}
-
-.footer {
-  height: 20rem;
-  background-color: color-from($colors, purple, dark);
 }
