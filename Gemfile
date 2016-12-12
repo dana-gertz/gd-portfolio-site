@@ -12,3 +12,6 @@ gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 
 # Windows does not come with time zone data
 gem "tzinfo-data", platforms: [:mswin, :mingw]
+
+# Autoprefixer http://www.rubydoc.info/gems/middleman-autoprefixer/2.4.1
+gem "middleman-autoprefixer"
