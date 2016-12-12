@@ -42,7 +42,6 @@ img {
 
 .home-intro {
   height: 100vh;
-  // background-color: color-from($colors, purple, dark);
   background: url(/assets/images/splash-2.png) no-repeat;
   background-size: contain;
   .intro-outer {
@@ -77,10 +76,6 @@ img {
       width: 25%;
       border: 1px solid #FFF;
       overflow: hidden;
-
-      // -webkit-transition: ease 0.75s;
-      // -moz-transition: ease 0.75s;
-      // -o-transition: ease 0.75s;
       transition: ease 0.75s;
 
       &:hover {
