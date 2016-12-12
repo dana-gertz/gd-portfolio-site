@@ -61,7 +61,6 @@ img {
 
 .work-preview {
   height: 100vh;
-  background-color: color-from($colors, grey, dark);
 
   ul {
     display: flex;
@@ -76,9 +75,17 @@ img {
     li {
       height: 50%;
       width: 25%;
-      background-color: $purple;
       border: 1px solid #FFF;
       overflow: hidden;
+
+      -webkit-transition: ease 0.75s;
+      -moz-transition: ease 0.75s;
+      -o-transition: ease 0.75s;
+      transition: ease 0.75s;
+
+      &:hover {
+        opacity: 0.5;
+      }
     }
   }
 }
