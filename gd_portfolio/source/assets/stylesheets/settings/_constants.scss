@@ -54,12 +54,17 @@ $font-weight--bold       : 700;
 
 %headline-lato {
   font-family: $font-family--primary;
-  font-weight: $font-weight--light;
+  font-weight: $font-weight--medium;
   text-transform: uppercase;
-  letter-spacing: .1rem;
 }
 
 %body-bitter {
   font-family: $font-family--secondary;
   font-weight: $font-weight--medium;
+}
+
+%body-lato {
+  font-family: $font-family--primary;
+  font-weight: $font-weight--light;
+  letter-spacing: 0.04rem;
 }

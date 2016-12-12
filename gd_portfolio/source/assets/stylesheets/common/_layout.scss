@@ -4,7 +4,7 @@
 }
 
 body {
-  @extend %body-bitter;
+  @extend %body-lato;
 }
 
 h1,
@@ -15,16 +15,24 @@ h2 {
 
 h2 {
   font-size: 1.75rem;
-  letter-spacing: .15rem;
+  letter-spacing: .05rem;
 }
 
 p {
-  @extend %body-bitter;
+  @extend %body-lato;
   margin: 0;
+  font-size: 1.4rem;
+  line-height: 2rem;
 }
 
 a {
   text-decoration: none;
+  font-size: 1.4rem;
+  transition: ease 0.5s;
+
+  &:hover {
+    color: $orange;
+  }
 }
 
 section {
@@ -95,13 +103,24 @@ img {
 
     .portrait {
       height: 100%;
-      width: 30%;
+      max-width: 30%;
       overflow: hidden;
       img {
         height: 100%;
         width: auto;
       }
+    }
+    .about-me-text {
+      height: 100%;
+      width: 70%;
+      padding: 4rem 5rem;
 
+      h2 {
+        margin-bottom: 2rem;
+      }
+      p {
+        max-width: 45rem;
+      }
     }
   }
 }
